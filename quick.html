@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{height: 3000px;}
+        *{margin: 0; padding: 0;}
+        ul, li {list-style: none}
+        a{text-decoration: none;}
+        #quick{
+            position: fixed;
+            background-color: rgb(245, 230, 230);
+            border: 3px solid #fff;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            line-height: 60px;
+            border-radius: 60px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.6s;
+            display: flex;
+            align-items: center;
+        }
+        #quick.on{height: 350px;}
+        #quick > a{
+            display: block;
+            color: #000;
+            line-height: 60px;
+            font-size: 45px;
+        }
+        #quick ul{
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+        }
+    </style>
+    <title>보였다 숨었다 하는 퀵 메뉴</title>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(("#quick > a")).click(function(){
+                $('#quick').toggleClass('on')
+            });
+        })
+    </script>
+</head>
+<body id="pageTop">
+    <div id="quick">
+        <a href="#none"> + </a>
+        <ul>
+            <li><a href="">퀵메뉴</a></li>
+            <li><a href="">퀵메뉴</a></li>
+            <li><a href="">퀵메뉴</a></li>
+            <li><a href="#pageTop">TOP</a></li>
+        </ul>
+    </div>
+</body>
+</html>

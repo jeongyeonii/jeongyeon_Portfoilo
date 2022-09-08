@@ -1,0 +1,49 @@
+#quickMenu{
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    ul{
+        li{
+            a{
+                padding-bottom: 0.5em;
+                > *{
+                    vertical-align: middle;
+                }
+                strong{
+                    margin-right: 1rem;
+                    color: transparent;
+                    font-weight: 100;
+                    font-size: 0.8em;
+                }
+                .circle{
+                    width: 0.5rem;
+                    height: 2rem;
+                    border-radius: 1rem;
+                    background-color: rgba(255,255,255,.4);
+                }
+                // &::after{
+                //     content: "";
+                //     display: inline-block;
+                //     width: 3rem;
+                //     height: 1px;
+                //     background-color: transparent;
+                //     vertical-align: middle;
+                // } //(a의 가상선택자임)가상선택자는 &를 표현해야함
+            }
+            &:hover,
+            &.on{
+                strong{
+                    color: #6E6563;
+                }
+                .circle{
+                    width: 0.5rem;
+                    height: 2rem;
+                    border-radius: 1rem;
+                    background-color: #fff;
+                    border: none
+                }
+            }
+        }
+    }
+}

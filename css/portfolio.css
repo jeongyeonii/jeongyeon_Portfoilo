@@ -1,0 +1,378 @@
+ul,li,dd,dt,dl{list-style: none;}
+a{text-decoration: none !important;}
+
+/* 큰 제목 폰트 */
+@font-face {
+    font-family: 'MYYeongnamnu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p,a,dd,dt,dl,h1,h2,h3,h4,h5,strong,span,div{font-family: 'Noto Sans KR';}
+
+
+body{background: #F3EBDA; overflow-x: hidden;}
+
+/**********************메인화면********************/
+#home, #me{
+    height: 100vh;
+}
+.home_text{
+    position: relative;
+    top: 22.5%;
+    left: 6%;
+    z-index: 5;
+}
+.home_text2{
+    font-family: 'MYYeongnamnu';
+    color: #A46361;
+    position: relative;
+    z-index: 10;
+    font-size: 11em;
+    text-align: right;
+    top: -236%;
+    right: -19%;
+}
+.home_text > p {
+    font-weight: 100;
+    color: #A46361;
+    font-size: 1.5em;
+}
+/* 메인도형 세개 */
+.homebg1{
+    position: relative;
+    width: 30em;
+    z-index: 1;
+    height: 33em;
+    left: -6em;
+    top: -10em;
+    background: #F2F3DE;
+    border-radius: 315.5px;
+}
+.homebg2{
+    z-index: 2;
+    position: relative;
+    width: 30em;
+    height: 33em;
+    left: -11em;
+    top: -39em;
+    border: 1px solid #F08679;
+    border-radius: 315.5px;
+}
+.homebg3{
+    position: relative;
+    width: 30em;
+    height: 33em;
+    z-index: 3;
+    left: -4em;
+    top: -68em;
+    border: 1px solid #BDAD9A;
+    border-radius: 315.5px;
+}
+/* 메인 내 사진 수정하까마까yo*/
+.home_img{
+
+}
+.home_img > img{
+    width: 36em;
+    opacity: 0.6;
+    transform: translate(17em, -105.5em);
+}
+/* 큰 제목 */
+.intro_title_me::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 0.14em;
+    background: #a46361;
+    left: ;
+    bottom: 0.1em;
+    left: -0.5em;
+}
+.intro_title_web::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 0.14em;
+    background: #a46361;
+    left: ;
+    bottom: 0.1em;
+    left: -0.5em;
+}
+.intro_title_gra::before{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1em;
+    width: 0.14em;
+    background: #a46361;
+    left: ;
+    bottom: 0.1em;
+    left: -0.5em;
+}
+.intro_title_me{
+    font-family:'MYYeongnamnu'; 
+    font-size: 3.5em;     
+    position: relative;
+    left: -5em;
+    top: 1em;
+    color: #a46361;
+}
+.intro_title_web , .intro_title_gra{
+    font-family:'MYYeongnamnu'; 
+    font-size: 3.5em;     
+    position: relative;
+    left: -0.62em;
+    top: 0;
+    color: #a46361;
+}
+/**********************내 소개글********************/
+
+.profile p,.ment p,.work p,.license p{
+    display: block;
+    margin-bottom: 0;
+}
+
+.profile h4,
+.ment h4,
+.work_title h4,
+.license_title h4,
+.skill_title h4{
+    color: #8E857B;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'MYYeongnamnu';
+}
+/* 소개 글씨*/
+.profile strong{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.profile p{
+    font-weight: 100;
+    font-size: 1.3em;
+}
+.ment > p{
+    font-size: 1.2em;
+    font-weight: 100;
+}
+.ment i{
+    font-size: 2em;
+    color: #8E857B;
+}
+.ment img{width: 5em;}
+.work p, .license p{
+    font-weight: 100;
+}
+.work strong, .license strong{
+    font-weight: 400;
+}
+.profile_ment_txt{
+    background-color: #F08679;
+    font-style: normal;
+    color: #fff;
+    font-weight: 500;
+}
+/* 소개 구분선 */
+/* .work_title::after{
+    content: "";
+    display: block;
+    border: 3px solid #6e656321;
+    position: absolute;
+    top: 66em;
+    width: 18em;
+    left: 76em;
+}
+.license_title::after{
+    content: "";
+    display: block;
+    border: 3px solid #6e656321;
+    position: absolute;
+    top: 76.5em;
+    left: 69em;
+    width: 25em;
+}
+.skill_title::after{
+    content: "";
+    display: block;
+    border: 3px solid #6e656321;
+    position: absolute;
+    top: 94.5em;
+    left: 67em;
+    width: 27em;
+} */
+/* 소개 배경 도형 */
+#me > div {
+    /* padding-top: 12em; */
+}
+.me_bg1{
+    position: fixed;
+    width: 100em;
+    height: 103em;
+    left: 65em;
+    top: 0;
+    z-index: -1;
+    background: rgba(238, 240, 194, 0.6);
+    border-radius: 100%;
+}
+.me_bg2{
+    position: absolute;
+    width: 25em;
+    height: 28em;
+    left: 8em;
+    top: 65em;
+    z-index: -1;
+    background: rgba(240, 134, 121, 0.4);
+    border-radius: 315.5px;
+}
+/* 소개 스킬 */
+.skill > div strong {
+    font-weight: 600;
+    padding-right: 1em;
+    margin-bottom: 0;
+    color: #A46361;
+}
+.skill > div i{
+    color: #6E6563;
+}
+/**********************웹********************/
+.container-my{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.web > div{
+    width: 100%;
+}
+.Gnu{
+    width: 50%;
+}
+.Gnu > p:nth-child(1){
+    font-size: 2em;
+    font-weight: 600;
+    color: #e96262;
+}
+.Gnu > p:nth-child(2){
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #686868;
+}
+.Gnu_txt{
+    font-style: normal;
+    color: #F08679;
+    font-weight: 600;
+}
+.Gnu i{
+    font-size: 3em;
+}
+.Gnu_basic{
+    font-style: normal;
+    color: #fff;
+    background-color: #8E857B;
+    font-weight: 500;
+}
+.Gnu strong{
+    font-weight: 300;
+}
+/* 웹 버튼 */
+.bt{
+    color: #fff;
+    height: 40px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+    font-family: Montserrat, "Noto Sans KR", "Malgun Gothic", "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+    letter-spacing: -0.025em;
+    background: #6E6563;
+    transition: all 800ms ease 0s;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6E6563;
+    border-image: initial;
+}
+.bt:hover{
+    background:#fff;
+    color: #333;
+}
+/**********************그래픽********************/
+#Grapic{
+    padding-top: 14em;
+    padding-bottom: 14em;
+}
+.g_title > p{
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.gra_banner > div > a > img{
+    width: 30em;
+    transition: 0.5s;
+}
+.gra_banner > div > a > img:hover{
+    opacity: 0.5;
+}
+/* 팝업 */
+.popup_wrap > div{display: none;}
+.popup_wrap > div{
+    position: fixed;
+    top: 0; bottom:0; left:0; right:0; margin:auto;
+    max-width:900px; max-height:900px;
+    width:80vw; height:80vw;    
+    z-index: 11;
+}
+.popup_1 img , .popup_2 img , .popup_3 img{
+    width: 100%;
+    cursor: pointer;
+}
+.popup_1 i , .popup_2 i , .popup_3 i{
+    font-size: 2.5em;
+}
+
+/* 쉐도우 효과*/
+body:after{
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    bottom:0;
+    display: none;
+  
+}
+body.shadow{
+    overflow-y: hidden;
+}
+body.shadow:after{
+  display: block;
+  z-index: 10;
+}
+
+/********************하단****************/
+footer{
+    height: 35vh;
+    background: #E0D9D3;
+}
+.c_happy{
+    font-size: 2.6em;
+    color: #F08679;
+}
+.footer a > i{
+    font-size: 2.5em;
+    width: 1.5em;
+    color: #F08679;
+}
+.f_thx{
+    color: #6E6563;
+    font-size: 5em;
+    font-weight: 300;
+    font-family: 'MYYeongnamnu';
+}
+.f_content{
+    font-size: 1.2em;
+    font-weight: 100;
+}

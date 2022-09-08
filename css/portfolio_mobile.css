@@ -1,0 +1,195 @@
+@media (max-width: 768px){
+    body{overflow-x: hidden;}
+    /* 영역별 패딩 top값 */
+    #me{padding-top: 8em;}
+    #Web{padding-top: 31em;}
+    #Grapic{padding-top: 4em; padding-bottom: 6em;}
+    #Contact{height: auto;}
+    /* 메인 이미지 정렬 */
+    .home_img > img {
+        width: 20em;
+        transform: translate(3em, 5em);
+        opacity: 0.6;
+    }
+    .home_text > p {
+        font-weight: 100;
+        color: #A46361;
+        font-size: 1.5em;
+        transform: translateY(-5em);
+    }
+    .homebg1 {
+        position: absolute;
+        width: 30em;
+        z-index: 1;
+        height: 33em;
+        left: -12em;
+        top: -11em;
+        background: #F2F3DE;
+        border-radius: 315.5px;
+    }
+    .homebg2 {
+        z-index: 2;
+        position: absolute;
+        width: 30em;
+        height: 32em;
+        left: -10em;
+        top: -14em;
+        border: 1px solid #F08679;
+        border-radius: 315.5px;
+    }
+    .homebg3 {
+        position: absolute;
+        width: 30em;
+        height: 33em;
+        z-index: 3;
+        left: -11em;
+        top: -10em;
+        border: 1px solid #BDAD9A;
+        border-radius: 315.5px;
+    }
+    .home_text2 {
+        /* font-family: 'MYYeongnamnu';
+        color: #A46361;
+        position: relative;
+        z-index: 10;
+        font-size: 5em;
+        text-align: right;
+        top: 1%;
+        right: -5%; */
+        display: none;
+    }
+
+
+
+/* 내 소개 글씨 */
+    .profile{padding-top: 2em;}
+    .ment > p {
+        font-size: 0.73em;
+        font-weight: 100;
+    }
+    .ment i {
+        font-size: 1.5em;
+        color: #8E857B;
+    }
+    .profile strong{
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+      .license strong , .work strong , .skill strong{
+        font-size: 1em;
+      }
+    .profile p , .license p , .work p , .skill p {
+        font-weight: 100;
+        font-size: 0.8em;
+      }
+
+    .license , .skill{padding-top: 2em;}
+
+    .work_title::after , .license_title::after , .skill_title::after{
+        display: none;
+    }
+
+    .profile h4, .ment h4, .work h4, .license h4, .skill h4{padding: 0;}
+
+    .profile , .license{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    /* 소개 부분 배경 도형 */
+    .me_bg2 {
+        position: absolute;
+        width: 17em;
+        height: 19em;
+        left: 8em;
+        top: 47em;
+        z-index: -1;
+        background: rgba(240, 134, 121, 0.4);
+        border-radius: 315.5px;
+    }
+    .me_bg1 {
+        position: absolute;
+        width: 26em;
+        height: 28em;
+        left: -4em;
+        top: 80em;
+        z-index: -1;
+        background: rgba(238, 240, 194, 0.6);
+        border-radius: 100%;
+      }
+    /* 웹, 그래픽 타이틀 위치 */
+    .intro_title_web, .intro_title_gra {
+        left: 0.6em;
+    }
+    /* 웹사이트 */
+    .web > div{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    .Gnu{width: auto;}
+    .Gnu > p:nth-child(2) {
+        font-size: 0.9em;
+        font-weight: 400;
+        color: #686868;
+        word-break: keep-all;
+    }
+    .Gnu strong{
+        font-size: 0.8em;
+    }
+    /* 아이맥 크기 */
+    .imac {
+        width: 100%;
+      }
+    /* 웹사이트 버튼 */
+    .bt{
+        height: 3em;
+        font-size: 0.8em;
+        width: 6em;
+    }
+    /* 그래픽 */
+    .g_title {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .g_title > p{
+        display: none;
+    }
+    /* 이미지크기 */
+    .gra_banner > div > a > img {
+        width: 20em;
+        transition: 0.5s;
+        padding-bottom: 2em;
+    }
+    .gra_banner > div{
+        flex-direction: column;
+    }
+    /* 팝업 d-none */
+
+    .gra_banner > div > a > img:hover{
+        opacity: 1;
+    }
+    /* CONTACT */
+    .contact{
+        width: auto;
+        margin: 0 auto;
+        padding-bottom: 4em;
+    }
+    .f_contact{
+        font-size: 1.5em;
+    }
+    /* FOOTER */
+    .f_thx{
+        font-size: 3em;
+    }
+    .f_content{
+        font-size: 1em;
+        word-break: keep-all;
+    }
+    .c_happy{
+        font-size: 2em;
+    }
+    .footer a > i{
+        font-size: 2em;
+    }
+}
